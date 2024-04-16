@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(45deg, #373b44, #4286f4);
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+#chat {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#message-form {
+    display: flex;
+}

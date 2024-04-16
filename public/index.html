@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Citas Médicas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+    <div class="container-fluid full-height">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <h1 class="text-center text-white">Sistema de Gestión de Citas Médicas</h1>
+                <div id="chat" class="mt-4">
+                    <ul id="messages" class="list-unstyled"></ul>
+                    <form id="message-form">
+                        <div class="input-group mt-3">
+                            <input type="text" id="message-input" class="form-control"
+                                placeholder="Escribe tu mensaje...">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+</html>
